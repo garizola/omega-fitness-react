@@ -15,14 +15,10 @@ const HeroBanner = () => {
         Omega Fitness
       </Typography>
       {/*  */}
-      <Typography fontWeight={700} lineHeight='50px' sx={{fontSize: {lg: '44px', xs: '40px'}}} mb='35px'>
-        Work, Sweat <br/> and Smile
+      <Typography fontWeight={700} lineHeight='50px' sx={{fontSize: {lg: '44px', sm: '34px', xs: '30px'}}} mb='35px'>
+       Expand Your Fitness <br/> & Discover New Exercises
       </Typography>
-      {/*  */}
-      {/* <Typography fontSize={22} lineHeight='35px' marginBottom={4}>
-        Check out the best exercises!
-      </Typography> */}
-      {/*  */}
+      
     
       <Button
         href='#exercises'

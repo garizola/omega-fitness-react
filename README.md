@@ -1,6 +1,5 @@
 # React Fitness App
-- exercise api & youtube api
 
-[Omega Fitness Link](https://omegafitness.netlify.app/)
-
-
+- React.js, MUI, RapidAPI utilization
+  [Omega Fitness Link](https://omegafitness.netlify.app/)
+  ![omega fitness landing page](./omegaLandingSS.png)
