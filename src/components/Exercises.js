@@ -4,7 +4,7 @@ import Pagination from '@mui/material/Pagination';
 import {Box,Stack,Typography} from '@mui/material';
 import ExerciseCard from './ExerciseCard';
 import {exerciseOptions, fetchData} from '../utils/fetchData'
-import BodyPart from './BodyPart';
+// import BodyPart from './BodyPart';
 
 const Exercises = ({exercises, setExercises, bodyPart}) => {
 
@@ -20,13 +20,16 @@ const Exercises = ({exercises, setExercises, bodyPart}) => {
   }
 
   useEffect(() => {
+    
     const fetchExercisesData = async () => {
       let exercisesData = [];
 
       if (bodyPart === 'all') {
         exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', exerciseOptions);
+        console.log(exercisesData);
       } else {
         exercisesData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}`, exerciseOptions);
+        // https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}
       }
 
       setExercises(exercisesData);
