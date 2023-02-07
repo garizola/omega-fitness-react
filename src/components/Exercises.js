@@ -28,7 +28,8 @@ const Exercises = ({exercises, setExercises, bodyPart}) => {
         exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', exerciseOptions);
         console.log(exercisesData);
       } else {
-        exercisesData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}`, exerciseOptions);
+        //list blank body parts until bug is fixed
+        exercisesData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises/bodyPart/%7BbodyPart%7D`, exerciseOptions);
         // https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}
       }
 
