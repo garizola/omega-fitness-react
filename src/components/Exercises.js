@@ -4,7 +4,8 @@ import Pagination from '@mui/material/Pagination';
 import {Box,Stack,Typography} from '@mui/material';
 import ExerciseCard from './ExerciseCard';
 import {exerciseOptions, fetchData} from '../utils/fetchData'
-// import BodyPart from './BodyPart';
+import BodyPart from './BodyPart';
+
 
 const Exercises = ({exercises, setExercises, bodyPart}) => {
 
@@ -28,8 +29,8 @@ const Exercises = ({exercises, setExercises, bodyPart}) => {
         exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', exerciseOptions);
         console.log(exercisesData);
       } else {
-        //list blank body parts until bug is fixed
-        exercisesData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises/bodyPart/%7BbodyPart%7D`, exerciseOptions);
+        
+        exercisesData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises`, exerciseOptions);
         // https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}
       }
 
