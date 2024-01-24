@@ -110,6 +110,12 @@ body {
 
   }
   
+  .MuiPagination-root {
+    button {
+      color: white !important;
+   }
+  }
+
   .exercise-card {
     width: 400px;
     height: 445px;
