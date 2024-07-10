@@ -75,7 +75,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           onChange={(e) => {
             setSearch(e.target.value.toLowerCase());
           }}
-          placeholder="Search Exercises..."
+          placeholder="Search for a body part or exercise..."
           type="text"
         />
         <Button
@@ -98,14 +98,19 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
         </Button>
       </Box>
       {/* <Box
-          sx={{
-            position: 'relative',
-            width: '100%',
-            p: '20px'
-          }}
-        >
-          <HorizontalScrollbar data={bodyParts} bodyPart={bodyPart} setBodyPart={setBodyPart} isBodyPart />
-        </Box> */}
+        sx={{
+          position: "relative",
+          width: "100%",
+          p: "20px",
+        }}
+      >
+        <HorizontalScrollbar
+          data={bodyParts}
+          bodyPart={bodyPart}
+          setBodyPart={setBodyPart}
+          isBodyPart
+        />
+      </Box> */}
     </Stack>
   );
 };
